@@ -1,19 +1,35 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+
 <html lang="pt-br">
+<!-- Abre o código HTML. O "lang=pt-br" informa que o idioma da página é Português do Brasil -->
+
 <head>
+    <!-- Cabeçalho da página (informações técnicas, não aparecem na tela) -->
+
     <meta charset="UTF-8">
+    <!-- Define que a página usará o padrão de caracteres UTF-8 (permite acentos e cedilha corretamente) -->
+
     <title>Exercício</title>
+    <!-- O título da página (vai aparecer na aba do navegador) -->
 </head>
+
 <body>
+    <!-- Aqui começa a parte visível da página -->
+
+    <!-- Botão: quando o usuário clicar nele, vai chamar a função "mostrarLista()" que está no JavaScript -->
     <button onclick="mostrarLista()" type="button">Mostrar lista</button>
 
-    <!-- Lista já existe no HTML, mas está vazia -->
+    <!-- Lista já existe no HTML. 
+         É uma lista não ordenada (<ul>), com três espaços para itens (<li>).
+         Cada <li> tem um "id", que funciona como um nome único.
+         Esses IDs serão usados no JavaScript para preencher os itens. -->
     <ul>
-        <li id="item1"></li>
-        <li id="item2"></li>
-        <li id="item3"></li>
+        <li id="item1"></li> <!-- Primeiro item da lista, ainda vazio -->
+        <li id="item2"></li> <!-- Segundo item da lista, ainda vazio -->
+        <li id="item3"></li> <!-- Terceiro item da lista, ainda vazio -->
     </ul>
 
+    <!-- Aqui fazemos a ligação do HTML com o arquivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
